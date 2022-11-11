@@ -7,12 +7,10 @@ public class TwoExceptions {
 
         try{
             int divisionNum = num1/num2;
+            int num4 = Integer.parseInt(myString);
         }
         catch (ArithmeticException e){
             System.out.println("Can't divide by zero");
-        }
-        try{
-            int num4 = Integer.parseInt(myString);
         }
         catch (NumberFormatException e) {
             System.out.println("Can't cast a String to an Integer");
@@ -21,6 +19,5 @@ public class TwoExceptions {
             System.out.println("Thanks for running");
             System.exit(0);
         }
-
     }
 }
